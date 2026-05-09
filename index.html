@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Recommendation System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            BR
+        </div>
+
+    <nav>
+    <a href="#">Home</a>
+
+    <a href="#booksSection" onclick="showAllBooks()">
+        Books
+    </a>
+
+    <a href="#">Features</a>
+</nav>
+    </header>
+
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Find Your Favorite Books</h1>
+
+            <p>
+                Search books according to your interests like science, math, programming, fantasy, Nepali literature, and more.
+            </p>
+
+            <div class="search-box">
+
+                <input type="text" id="searchInput"
+                    placeholder="Search books like math, science, nepali, coding...">
+
+                <button onclick="recommendBooks()">
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="recommendation-section" id="booksSection">
+
+        <div class="section-title">
+
+            <h2>Recommended Books</h2>
+
+        
+
+        </div>
+
+        <div class="book-container" id="bookContainer">
+
+        </div>
+
+    </section>
+
+
+    <section class="features">
+
+        <div class="feature-card">
+            <h3>Smart Recommendation</h3>
+
+            <p>
+                Uses keyword matching algorithm to recommend books.
+            </p>
+        </div>
+
+
+        <div class="feature-card">
+            <h3>International Books</h3>
+
+            <p>
+                Includes Nepali and international writers.
+            </p>
+        </div>
+
+
+        <div class="feature-card">
+            <h3>Responsive Website</h3>
+
+            <p>
+                Fully responsive for mobile and desktop devices.
+            </p>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>
+            © 2026 Book Recommendation System
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
